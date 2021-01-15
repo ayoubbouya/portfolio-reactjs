@@ -1,0 +1,105 @@
+ h1 {
+     font-size: 3vw;
+ }
+ .container-resume{
+    margin: 3% auto;
+    text-align: center;
+    width: 70%;
+    height:auto;  
+    display: flex;
+    flex-direction: column;
+    border-radius: 4rem;
+    box-shadow: 4px 4px 50px rgb(190, 190, 190);
+    
+ }
+ /************************ BLUE ***********************/
+
+.resume-blue {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #2196F3 , #046ec4);
+    border-radius: 4rem 4rem 0 0 ;  
+    padding: 1rem 0; 
+    color: #fff;
+}
+
+
+  /****************** LIGHT ***********************/
+  .education {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.certification {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.resume-light .education-child ul li ,.certification-child ul li {
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    padding: 1vw 2vw;
+    width: 25vw;
+    margin: 3%;
+    font-size: 1vw;
+}
+.resume-light {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2vw;
+
+}
+.resume-light h2 {
+    text-transform: uppercase;
+    color: #2196F3;
+}
+.resume-light ul li h4{
+    color: #046ec4;
+}
+.resume-light ul li p{
+    font-size: .8vw;
+}
+.resume-light ul li a{
+    font-weight: 100;
+    color: #A8A8A8;
+}
+
+/************************ SKILLS **************************/
+.skills {
+    width: 100%;
+}
+.skills h2 {
+    margin: 10px 0;
+     
+}
+.skills .skills-child ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills .skills-child ul li {
+    margin: 1% .5%;
+    font-size: 1.1vw;
+    padding: .6vw 1.7vw;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+.html{
+    background-color: #4B6584;
+}
+.css{
+    background-color: #F0CA00;
+}
+.js {
+    background-color: #20BF6B;
+}
+.design{
+    background-color: #FC5C65;
+}

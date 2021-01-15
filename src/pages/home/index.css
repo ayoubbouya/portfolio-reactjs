@@ -1,0 +1,109 @@
+.container{  
+    margin: 2% auto;
+    text-align: center;
+    width: 70%;
+    height:auto;  
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap;
+    border-radius: 4rem;
+    box-shadow: 4px 4px 50px rgb(190, 190, 190);
+}
+  
+/************* part blue *************/
+.part-blue {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #2196F3 , #046ec4);
+    border-radius: 4rem 4rem 0 0 ;  
+    padding: 2rem; 
+    color: #fff;
+}
+.part-blue h1.myName{
+    font-size: 6vw;
+    letter-spacing:3px;
+    color: #fff;
+}
+.part-blue p{
+    font-size: 2vw;
+    letter-spacing:.5vw;  
+}
+.part-blue ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part-blue ul li {
+    margin: 1%;
+    padding: .5vw;
+    font-size: 2vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.part-blue ul li a {
+    display: flex;
+    align-items: center;
+    color: #2196F3;
+}
+/************* part light **************/
+.part-light {
+     display: flex; 
+}
+     /*part 1*/
+.part-light .part1{
+    width: 70%;
+    background-color: #fff;
+     border-radius: 0 0 0 4rem ; 
+    padding: 2vw;
+    text-align: left;
+    line-height: 1.2;
+}
+.part-light .part1 h2{
+    padding: 1vw 0;
+}
+.part-light .part1 ul {
+    display: flex;
+}
+.part-light .part1 p {
+    padding: .5vw 0;
+    text-align: justify;
+}
+.part-light .part1 span {
+    color: #2196F3;
+    font-weight: 800;
+}
+    /*part 2*/
+.part-light .part2{
+    width: 30%;  
+    border-radius: 0 0 4rem 0 ;  
+    background-color: #Fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part-light .part2 button{
+    width: 15vw;
+    padding: 2vh;
+    border: 2px solid #2196F3;
+    border-radius: 1rem;
+    margin: 4% 0;
+    background-color: transparent; 
+    
+}
+.part-light .part2 button a {
+    font-size: 1.2vw;
+    font-weight: lighter;
+    color: #2196F3; 
+    
+}
+.part-light .part2 button h4 {
+    font-size: 1vw;
+    font-weight:lighter;
+    color: #2196F3; 
+}
+
+.part-light .part2 a {
+    display:block;
+    width: 100%;
+
+}
