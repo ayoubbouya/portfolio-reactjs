@@ -39,7 +39,7 @@ const Home = () => {
                             <h2>KNOW MORE</h2>
                             <h4>ABOUT ME</h4>
                         </a>
-                        <a href="/projects">
+                        <a href="/contact">
                             <h2>GOT A PROJECT?</h2>
                             <h4>CONTACT ME</h4>
                         </a>

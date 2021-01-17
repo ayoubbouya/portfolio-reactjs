@@ -15,27 +15,29 @@
     width: 100%;
     background-image: linear-gradient(to bottom, #2196F3 , #046ec4);
     border-radius: 4rem 4rem 0 0 ;  
-    padding: 2rem; 
+    padding: 1.5rem; 
     color: #fff;
 }
 .part-blue h1.myName{
-    font-size: 6vw;
+    font-size: 6rem;
     letter-spacing:3px;
     color: #fff;
 }
 .part-blue p{
-    font-size: 2vw;
+    font-size: 1.5rem;
     letter-spacing:.5vw;  
 }
 .part-blue ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin: .5rem;
 }
 .part-blue ul li {
     margin: 1%;
-    padding: .5vw;
-    font-size: 2vw;
+    padding: .5rem;
+    font-size: 1.5rem;
     background-color: #fff;
     border-radius: 50%;
 }
@@ -52,19 +54,19 @@
 .part-light .part1{
     width: 70%;
     background-color: #fff;
-     border-radius: 0 0 0 4rem ; 
-    padding: 2vw;
+    border-radius: 0 0 0 4rem ; 
+    padding: 2rem;
     text-align: left;
     line-height: 1.2;
 }
 .part-light .part1 h2{
-    padding: 1vw 0;
+    padding: 1rem 0;
 }
 .part-light .part1 ul {
     display: flex;
 }
 .part-light .part1 p {
-    padding: .5vw 0;
+    padding: .5rem 0;
     text-align: justify;
 }
 .part-light .part1 span {
@@ -94,7 +96,6 @@
     
 }
 
- 
   
 .part-light .part2 a:hover{
     background-color: #2196F3;
@@ -115,7 +116,7 @@
     
 }
 .part-light .part2 h4 {
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight:lighter;
     color: #2196F3; 
 }
@@ -127,4 +128,72 @@
 .rotate:hover {
     transform: rotate(360deg);
   }
+ 
+/********* responsive ********/
+/* Smartphones (portrait) ---------------- */
+
+  @media (max-width : 320px) {
+    .container {
+       
+        width: 100%;
+      
+    }
+    .part-blue h1.myName{
+        font-size: 2.3rem;
+    }
+    .part-blue p {
+        font-size: 1.4rem;
+        letter-spacing: 0.1vw;
+    }
+    .part-blue ul li { 
+        margin: .3rem;
+    }
+
+    .part-light {
+        flex-direction: column;
+    }
+    .part-light .part1 {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0;
+        
+    }
+    .part-light .part1 h2, .part-light .part1 p{
+        padding: .6rem;
+    }
+
+    .part-light .part2 {
+        width: 100%;
+        border-radius: 0 0 4rem 4rem;
+        padding: 1rem;
+    }
+ }
+ /* Smartphones (landscape) ---------------- */
+ @media (min-width : 321px) and (max-width : 668px)
+ {
+    .container {
+        width: 100%;
+    }
+    .part-blue h1.myName {
+        font-size: 2.5rem;
+    }
+    .part-light {
+        flex-direction: column;
+    }
+    .part-light .part1 {
+        width: 100%;
+        border-radius:0;
+    }
+    .part-blue ul li {
+        margin: .3rem;
+    }
+
+    .part-light .part2 {
+        width: 100%;
+        border-radius: 0 0 4rem 4rem;
+        padding: 1rem 0;
+    }
+
+    
+ }
  
