@@ -1,0 +1,16 @@
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr);
+    padding: 2rem;
+   
+    
+}
+.project{
+    width: 80%;
+    height: 230px;
+    margin: 5% auto;
+    background-color: #2196F3;
+    border-radius: 3px;
+    
+}

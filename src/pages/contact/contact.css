@@ -1,0 +1,57 @@
+.contact-light {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+   
+}
+
+.locate{
+    width: 50%;
+    
+}
+.locate h2 {
+    font-size: 2.4vw;
+}
+.locate h2 span,.get h2 span {
+    color: #2196F3;
+    font-weight: 800;
+}
+.Locate-child img{
+    border-radius: 3px;
+    padding: 1rem 0;
+}
+
+
+.get {
+    width: 40%;   
+}
+
+.get form {
+    display: flex;
+    flex-direction: column; 
+   text-align: left;
+   padding: 1rem 0;
+}
+.get h2{
+    font-size: 2.4vw;
+}
+.get p,.get h2 {
+    text-align: left;
+    padding-bottom: 1rem;
+   
+}
+.get p{
+    padding-bottom: 1rem;
+}
+.get input,.get textarea{
+    width: 20vw;
+    padding: .4vw 1vw ;
+    border: none;
+    background-color: #e4e4e4;
+    outline: none;
+    font-size: 1vw;
+}
+
+ 

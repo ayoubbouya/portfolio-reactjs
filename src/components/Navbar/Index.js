@@ -6,16 +6,16 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <NavLink to='/'>
+                <NavLink className="rotate" to='/'>
                     <img style={{width:'70px'}} src={logo} alt="Logo" />
                 </NavLink>
                 <Bars />
                 <NavMenu>
+                    <NavLink to='/' activeStyle>
+                        Home
+                    </NavLink>
                     <NavLink to='/resume' activeStyle>
                         Resume
-                    </NavLink>
-                    <NavLink to='/services' activeStyle>
-                        Services
                     </NavLink>
                     <NavLink to='/projects' activeStyle>
                         Projects

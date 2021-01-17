@@ -13,12 +13,12 @@ const Home = () => {
                     <h1 className="myName">Ayoub Bouya</h1>
                     <p>Front-End Developer</p>
                     <ul>
-                        <li><a href="#"><FaLinkedinIn /></a></li>
-                        <li><a href="#"><FaGithub /></a></li>
-                        <li><a href="#"><FaTwitter /></a></li>
-                        <li><a href="#"><FaFacebook /></a></li>
-                        <li><a href="#"><FaInstagram /></a></li>
-                        <li><a href="#"><FaCodepen /></a></li>
+                        <li className="rotate"><a href="https://www.linkedin.com/in/ayoubbouya/"><FaLinkedinIn /></a></li>
+                        <li className="rotate"><a href="https://www.linkedin.com/in/ayoubbouya/"><FaGithub /></a></li>
+                        <li className="rotate"><a href="https://twitter.com/AyoubBouya11"><FaTwitter /></a></li>
+                        <li className="rotate"><a href="https://www.facebook.com/ayoub.bouya2"><FaFacebook /></a></li>
+                        <li className="rotate"><a href="https://www.instagram.com/ayoubouya/"><FaInstagram /></a></li>
+                        <li className="rotate"><a href="https://codepen.io/your-work/"><FaCodepen /></a></li>
                     </ul>
                 </div>
                 <div className="part-light">
@@ -35,14 +35,14 @@ const Home = () => {
                         </ul>
                     </div>
                     <div className="part2">
-                        <button>
-                            <a href="#">KNOW MORE</a>
-                            <h4 href="#">ABOUT ME</h4>
-                        </button>
-                        <button>
-                            <a href="#">GOT A PROJECT?</a>
-                            <h4 href="#">CONTACT ME</h4>
-                        </button>
+                        <a href="/resume">
+                            <h2>KNOW MORE</h2>
+                            <h4>ABOUT ME</h4>
+                        </a>
+                        <a href="/projects">
+                            <h2>GOT A PROJECT?</h2>
+                            <h4>CONTACT ME</h4>
+                        </a>
                     </div>
                 </div>
             </div>

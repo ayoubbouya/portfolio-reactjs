@@ -47,6 +47,7 @@
     width: 25vw;
     margin: 3%;
     font-size: 1vw;
+    box-shadow: 1px 1px 5px rgb(138, 137, 137);
 }
 .resume-light {
     display: flex; 
@@ -59,9 +60,7 @@
     text-transform: uppercase;
     color: #2196F3;
 }
-.resume-light ul li h4{
-    color: #046ec4;
-}
+ 
 .resume-light ul li p{
     font-size: .8vw;
 }

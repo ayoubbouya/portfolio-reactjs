@@ -81,29 +81,50 @@
     justify-content: center;
     align-items: center;
 }
-.part-light .part2 button{
-    width: 15vw;
+.part-light .part2 a{
+    display:block;
+    width: 80%; 
     padding: 2vh;
-    border: 2px solid #2196F3;
+    border-top: 2px solid #2196F3;
     border-radius: 1rem;
     margin: 4% 0;
     background-color: transparent; 
+    box-shadow: 2px 2px 9px #0084f08c;
+
     
 }
-.part-light .part2 button a {
-    font-size: 1.2vw;
+
+ 
+  
+.part-light .part2 a:hover{
+    background-color: #2196F3;
+    transition: background-color 500ms linear;
+}
+ 
+.part-light .part2 a:hover h2,.part-light .part2 a:hover h4{
+    color: #FFF;
+    transition: color 500ms linear;
+  }
+
+  
+.part-light .part2 h2 {
+    font-size: 1.5rem;
     font-weight: lighter;
     color: #2196F3; 
     
+    
 }
-.part-light .part2 button h4 {
+.part-light .part2 h4 {
     font-size: 1vw;
     font-weight:lighter;
     color: #2196F3; 
 }
 
-.part-light .part2 a {
-    display:block;
-    width: 100%;
-
-}
+ /* animations */
+.rotate {
+    transition: all 800ms ease-in-out;
+  }
+.rotate:hover {
+    transform: rotate(360deg);
+  }
+ 
