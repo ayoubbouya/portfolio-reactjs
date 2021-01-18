@@ -9,14 +9,13 @@
     border-radius: 4rem;
     box-shadow: 4px 4px 50px rgb(190, 190, 190);
 }
-  
 /************* part blue *************/
 .part-blue {
     width: 100%;
     background-image: linear-gradient(to bottom, #2196F3 , #046ec4);
     border-radius: 4rem 4rem 0 0 ;  
     padding: 1.5rem; 
-    color: #fff;
+    color: white;
 }
 .part-blue h1.myName{
     font-size: 6rem;
@@ -187,13 +186,10 @@
     .part-blue ul li {
         margin: .3rem;
     }
-
     .part-light .part2 {
         width: 100%;
         border-radius: 0 0 4rem 4rem;
         padding: 1rem 0;
     }
-
-    
  }
  
