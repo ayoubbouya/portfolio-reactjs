@@ -15,7 +15,7 @@
     background-image: linear-gradient(to bottom, #2196F3 , #046ec4);
     border-radius: 4rem 4rem 0 0 ;  
     padding: 1.5rem; 
-    color: white;
+    color: #fff;
 }
 .part-blue h1.myName{
     font-size: 6rem;
@@ -85,41 +85,31 @@
 .part-light .part2 a{
     display:block;
     width: 80%; 
-    padding: 2vh;
+    padding: 2rem;
     border-top: 2px solid #2196F3;
     border-radius: 1rem;
     margin: 4% 0;
     background-color: transparent; 
     box-shadow: 2px 2px 9px #0084f08c;
-
-    
 }
-
-  
 .part-light .part2 a:hover{
     background-color: #2196F3;
     transition: background-color 500ms linear;
 }
- 
 .part-light .part2 a:hover h2,.part-light .part2 a:hover h4{
     color: #FFF;
     transition: color 500ms linear;
   }
-
-  
 .part-light .part2 h2 {
     font-size: 1.5rem;
     font-weight: lighter;
-    color: #2196F3; 
-    
-    
+    color: #2196F3;   
 }
 .part-light .part2 h4 {
     font-size: 1rem;
     font-weight:lighter;
     color: #2196F3; 
 }
-
  /* animations */
 .rotate {
     transition: all 800ms ease-in-out;
@@ -147,7 +137,6 @@
     .part-blue ul li { 
         margin: .3rem;
     }
-
     .part-light {
         flex-direction: column;
     }
@@ -160,7 +149,6 @@
     .part-light .part1 h2, .part-light .part1 p{
         padding: .6rem;
     }
-
     .part-light .part2 {
         width: 100%;
         border-radius: 0 0 4rem 4rem;
@@ -171,7 +159,7 @@
  @media (min-width : 321px) and (max-width : 668px)
  {
     .container {
-        width: 100%;
+        width: 90%;
     }
     .part-blue h1.myName {
         font-size: 2.5rem;
@@ -192,4 +180,40 @@
         padding: 1rem 0;
     }
  }
- 
+/* Medium devices (tablets, 768px and up) */
+
+ @media (min-width : 669px) and (max-width : 768px)
+ {
+    .part-blue h1.myName {
+        font-size: 4.5rem;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .part-light {
+        flex-direction: column;
+    }
+    .part-light .part1 {
+        width: 100%;
+        border-radius:0;
+    }
+    .part-blue ul li {
+        margin: .3rem;
+    }
+    .part-light .part2 {
+        width: 100%;
+        border-radius: 0 0 4rem 4rem;
+        padding: 1rem 0;
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+ @media(min-width : 769px) and  (max-width: 992px) { 
+    .part-light .part1 {
+        width: 60%;
+    }
+    .part-light .part2 {
+        width: 40%;
+    }
+   }
