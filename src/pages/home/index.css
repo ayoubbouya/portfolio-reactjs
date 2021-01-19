@@ -170,12 +170,8 @@
     }
     .part-light .part2 h2 {
         font-size: 1rem;
-<<<<<<< HEAD
-        font-weight: 300;
-=======
         font-weight: 200;
->>>>>>> 00021473463417808f244254d6dce07c9ddf0bdb
-    }
+     }
  }
  /* Smartphones (landscape) ---------------- */
  @media (min-width : 321px) and (max-width : 480px)
@@ -276,13 +272,12 @@
     part-blue h1.myName {
         font-size: 4rem;
     }
-<<<<<<< HEAD
+ 
     .container {
         width: 80%;
     }
-=======
->>>>>>> 00021473463417808f244254d6dce07c9ddf0bdb
-    part-blue p {
+ 
+     part-blue p {
         font-size: 2.4rem;
     }
     .part-blue ul li {
