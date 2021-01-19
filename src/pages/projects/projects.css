@@ -14,3 +14,40 @@
     border-radius: 3px;
     
 }
+
+/********* responsive ********/
+/* Smartphones (portrait) ---------------- */
+
+@media (max-width : 320px) {
+    .projects {
+        
+        grid-template-columns: repeat(1,1fr);
+        padding: 1rem;
+    }
+}
+/* Smartphones (landscape) ---------------- */
+@media (min-width : 321px) and (max-width : 480px)
+{  
+    .projects {
+        
+        grid-template-columns: repeat(1,1fr);
+        padding: 1rem;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width : 481px) and (max-width : 768px)
+{ 
+    .projects {
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem;
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+ @media(min-width : 769px) and  (max-width: 992px) { 
+    .projects {
+        grid-template-columns: repeat(3,1fr);
+         padding: 1rem;
+    }
+ }

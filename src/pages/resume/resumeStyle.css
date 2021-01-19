@@ -1,5 +1,5 @@
  h1 {
-     font-size: 3vw;
+     font-size: 3rem;
  }
  .container-resume{
     margin: 3% auto;
@@ -44,17 +44,16 @@
     border: 2px solid #2196F3;
     border-radius: 10px;
     padding: 1vw 2vw;
-    width: 25vw;
+    width: 25rem;
     margin: 3%;
-    font-size: 1vw;
+    font-size: 1rem;
     box-shadow: 1px 1px 5px rgb(138, 137, 137);
 }
 .resume-light {
     display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2vw;
-
+    padding: 2rem;
 }
 .resume-light h2 {
     text-transform: uppercase;
@@ -62,10 +61,10 @@
 }
  
 .resume-light ul li p{
-    font-size: .8vw;
+    font-size: .9rem;
 }
 .resume-light ul li a{
-    font-weight: 100;
+    font-weight: 300;
     color: #A8A8A8;
 }
 
@@ -84,7 +83,7 @@
 }
 .skills .skills-child ul li {
     margin: 1% .5%;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
     padding: .6vw 1.7vw;
     border-radius: 5px;
     color: #fff;
@@ -102,3 +101,118 @@
 .design{
     background-color: #FC5C65;
 }
+
+ 
+/********* responsive ********/
+/* Smartphones (portrait) ---------------- */
+
+
+@media (max-width : 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .container-resume {
+        width: 100%;
+    }
+    .resume-light h2 {
+        font-size: 1rem;
+    }
+    .resume-light {
+        flex-direction: column;
+    }
+    .resume-light {
+        padding: 1rem;
+    }
+    .resume-light .education-child ul li, .certification-child ul li {
+        width: 15rem;
+        margin: 0.5rem auto;
+    }
+    .education {
+        width: 90%;
+        margin: auto;
+    }
+    .certification {
+        margin: auto;
+        padding: .5rem;
+    }
+
+}
+ /* Smartphones (landscape) ---------------- */
+ @media (min-width : 321px) and (max-width : 480px) {
+    .container-resume {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .resume-light h2 {
+        font-size: 1rem;
+    }
+    .resume-light {
+        flex-direction: column;
+    }
+    .resume-light {
+        padding: 1rem;
+    }
+    .resume-light .education-child ul li, .certification-child ul li {
+        width: 17rem;
+        margin: .5rem auto;
+    }
+    .education {
+        width: 90%;
+        margin: auto;
+    }
+    .certification {
+        margin: auto;
+        padding: .5rem;
+    }
+ }
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width : 481px) and (max-width : 768px) { 
+    .container-resume {
+        width: 90%;
+    }
+    .resume-light {
+        flex-direction: column;
+    }
+    .education {
+        width: 100%;
+    }
+    .certification {
+        width: 100%;
+    }
+    .resume-light .education-child ul li, .certification-child ul li {
+       
+        width: 25rem;
+        margin: 3% auto;
+        
+    }
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+ @media(min-width : 769px) and  (max-width: 992px) { 
+    .container-resume {
+        width: 80%;
+    }
+    .resume-light .education-child ul li, .certification-child ul li {
+      
+        width: 17rem;
+        
+    }
+ } 
+   /* Large devices (desktops, 992px and up) */
+   @media(min-width : 993px)  and  (max-width: 1200px) { 
+    .resume-light .education-child ul li, .certification-child ul li {
+        width: 19rem;
+    }
+   }
+      /* Large devices (desktops, 992px and up) */
+ @media(min-width : 1200px)  and  (max-width: 1400px) { 
+    .resume-light .education-child ul li, .certification-child ul li {
+        width: 24rem;
+    }
+   }

@@ -102,12 +102,12 @@
   }
 .part-light .part2 h2 {
     font-size: 1.5rem;
-    font-weight: lighter;
+    font-weight: 500;
     color: #2196F3;   
 }
 .part-light .part2 h4 {
     font-size: 1rem;
-    font-weight:lighter;
+    font-weight:400;
     color: #2196F3; 
 }
  /* animations */
@@ -122,23 +122,25 @@
 /* Smartphones (portrait) ---------------- */
 
   @media (max-width : 320px) {
+
     .container {
-       
         width: 100%;
-      
     }
     .part-blue h1.myName{
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
     .part-blue p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         letter-spacing: 0.1vw;
     }
     .part-blue ul li { 
         margin: .3rem;
+        font-size: 1rem;
     }
+     
     .part-light {
         flex-direction: column;
+         
     }
     .part-light .part1 {
         width: 100%;
@@ -148,28 +150,61 @@
     }
     .part-light .part1 h2, .part-light .part1 p{
         padding: .6rem;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .part-light .part1 h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .part-light .part1 span {
+        font-weight: 400;
     }
     .part-light .part2 {
         width: 100%;
         border-radius: 0 0 4rem 4rem;
         padding: 1rem;
     }
+    .part-light .part2 a {
+        padding: 1rem;
+    }
+    .part-light .part2 h2 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
  }
  /* Smartphones (landscape) ---------------- */
- @media (min-width : 321px) and (max-width : 668px)
- {
+ @media (min-width : 321px) and (max-width : 480px)
+ {  
+    
     .container {
         width: 90%;
     }
     .part-blue h1.myName {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+    }
+    .part-blue p {
+        font-size: 1.2rem;  
+     }
+     .part-blue ul li {
+        font-size: 1rem;
+    }
+    .part-light .part1 h2{
+        font-size: 22px;
+        font-weight: 500;
     }
     .part-light {
         flex-direction: column;
     }
     .part-light .part1 {
         width: 100%;
+        padding:1rem;
         border-radius:0;
+    }
+    .part-light .part1 p {
+        padding: .5rem 0;
+        text-align: justify;
+        font-size: 16px;
     }
     .part-blue ul li {
         margin: .3rem;
@@ -179,24 +214,44 @@
         border-radius: 0 0 4rem 4rem;
         padding: 1rem 0;
     }
+    .part-light .part2 a {
+        padding: 1rem;
+    }
+    .part-light .part1 span {
+        font-weight: 400;
+    }
+    .part-light .part2 h2 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+     
  }
 /* Medium devices (tablets, 768px and up) */
 
- @media (min-width : 669px) and (max-width : 768px)
+ @media (min-width : 481px) and (max-width : 768px)
  {
     .part-blue h1.myName {
-        font-size: 4.5rem;
+        font-size: 2.5rem;
     }
+    .part-blue p {
+        font-size: 1.6rem;
+     }
     .container {
         width: 90%;
     }
-
     .part-light {
         flex-direction: column;
     }
     .part-light .part1 {
         width: 100%;
         border-radius:0;
+    }
+    part-light .part1 h2 {
+        font-size: 24px;
+        
+    }  
+    .part-light .part1 p {
+        font-size: 16px;
     }
     .part-blue ul li {
         margin: .3rem;
@@ -205,11 +260,27 @@
         width: 100%;
         border-radius: 0 0 4rem 4rem;
         padding: 1rem 0;
+    }
+    .part-light .part2 a {
+        padding: 1rem;
+        font-weight: 400;
     }
  }
 
  /* Large devices (desktops, 992px and up) */
  @media(min-width : 769px) and  (max-width: 992px) { 
+    part-blue h1.myName {
+        font-size: 4rem;
+    }
+    .container {
+        width: 80%;
+    }
+    part-blue p {
+        font-size: 2.4rem;
+    }
+    .part-blue ul li {
+        font-size: 2rem;
+    }
     .part-light .part1 {
         width: 60%;
     }
@@ -217,3 +288,5 @@
         width: 40%;
     }
    }
+
+ 

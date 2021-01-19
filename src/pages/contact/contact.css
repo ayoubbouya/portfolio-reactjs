@@ -3,16 +3,13 @@
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
-    padding: 3rem 1rem;
-   
+    padding: 3rem 1rem;  
 }
-
 .locate{
-    width: 50%;
-    
+    width: 50%; 
 }
-.locate h2 {
-    font-size: 2.4vw;
+.locate h2 ,.get h2  {
+    font-size: 2.2rem;
 }
 .locate h2 span,.get h2 span {
     color: #2196F3;
@@ -22,20 +19,14 @@
     border-radius: 3px;
     padding: 1rem 0;
 }
-
-
 .get {
     width: 40%;   
 }
-
 .get form {
     display: flex;
     flex-direction: column; 
    text-align: left;
    padding: 1rem 0;
-}
-.get h2{
-    font-size: 2.4vw;
 }
 .get p,.get h2 {
     text-align: left;
@@ -46,12 +37,98 @@
     padding-bottom: 1rem;
 }
 .get input,.get textarea{
-    width: 20vw;
-    padding: .4vw 1vw ;
+    width: 23vw;
+    padding: .4rem 1rem ;
     border: none;
     background-color: #e4e4e4;
     outline: none;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
- 
+/********* responsive ********/
+/* Smartphones (portrait) ---------------- */
+@media (max-width : 320px) {
+    .contact-light {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .container-resume {
+        text-align: left;
+    }
+    .container-resume h1{
+        text-align: center;
+    }
+     .get h2 {
+        padding-top: 1rem;
+    }
+    .locate,.get {
+        width: 100%;
+    }
+    .get input, .get textarea {
+        width: 87vw;
+    }
+    .get p{
+        width: 100%;
+    }
+    .locate h2, .get h2 {
+        font-size: 1.2rem;
+    }
+    .Locate-child {
+        text-align: left;
+    }
+}
+
+ /* Smartphones (landscape) ---------------- */
+ @media (min-width : 321px) and (max-width : 480px)
+{
+    .contact-light {
+        padding: 1rem  2rem;
+        flex-direction: column;
+    }
+    .container-resume {
+        text-align: left;
+    }
+    .container-resume h1{
+        text-align: center;
+    }
+     .get h2 {
+        padding-top: 1rem;
+    }
+    .locate,.get {
+        width: 100%;
+    }
+    .get input, .get textarea {
+        width: 67vw;
+    }
+    .get p{
+        width: 100%;
+    }
+    .locate h2, .get h2 {
+        font-size: 1.2rem;
+    }
+    .Locate-child {
+        text-align: left;
+    }
+}
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width : 481px) and (max-width : 768px)
+ {
+    .locate h2, .get h2 {
+        font-size: 1.8rem;
+    }
+    .contact-light {
+        padding: 2rem 1rem;
+    }
+    .locate {
+        width: 40%;
+    }
+    .get input, .get textarea {
+        width: 35vw;
+    }
+ }
+  /* Large devices (desktops, 992px and up) */
+  @media(min-width : 769px) and  (max-width: 992px) { 
+    .get input, .get textarea {
+        width: 30vw;
+    }
+}
