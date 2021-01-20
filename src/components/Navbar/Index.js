@@ -1,32 +1,43 @@
 import React from 'react';
 import logo from '../../images/logoBlue.png';
-import {Nav, NavLink, Bars, NavMenu} from './NavbarElements'
+import {Nav, NavLink, NavMenu} from './NavbarElements'
+import './navbar.css'
+import { Component } from 'react';
 
-const Navbar = () => {
+
+class Navbar extends Component {
+    state = {clicked : false}
+    handleClick = () => {
+        this.setState({clicked:!this.state.clicked})
+    }
+    render() {
+
+    
     return (
         <>
             <Nav>
-                <NavLink className="rotate" to='/'>
+                <NavLink className="rotate" to='/home'>
                     <img style={{width:'70px'}} src={logo} alt="Logo" />
-                </NavLink>
-                <Bars />
-                <NavMenu>
-                    <NavLink to='/' activeStyle>
-                        Home
+                </NavLink>               
+               <NavMenu className="actived">
+                    <NavLink className="navlink" to='/home' activeStyle>
+                        Home 
                     </NavLink>
-                    <NavLink to='/resume' activeStyle>
+                    <NavLink className="navlink" to='/resume' activeStyle>
                         Resume
                     </NavLink>
-                    <NavLink to='/projects' activeStyle>
+                    <NavLink  className="navlink" to='/projects' activeStyle>
                         Projects
                     </NavLink>
-                    <NavLink to='/contact' activeStyle>
+                    <NavLink className="navlink" to='/contact' activeStyle>
                         Contact
                     </NavLink>
                 </NavMenu>
             </Nav>
         </>
     )
+}
+
 }
 
 export default Navbar
